@@ -3,6 +3,8 @@ import { BrowserRouter as Router , Route , Routes } from 'react-router-dom'
 import HomeLayout from './layouts/HomeLayout'
 import Home from './pages/home'
 import NotFound from './components/NotFound'
+import About from './pages/about'
+
 const AppRoutes = () => {
   return (
     <Router>
@@ -13,7 +15,7 @@ const AppRoutes = () => {
 
                 <Route  index element={<Home />}/>
                 <Route  path='*' element={<NotFound />}/>
-                {/* <Route  path='/about' element={<About />}/> */}
+                <Route  path='about' element={<About />} />
 
 
 

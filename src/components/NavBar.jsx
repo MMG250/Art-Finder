@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 const NavBar = () => {
   return (
     <header className="bg-white">
-      <nav className=" flex items-center justify-between w-[80%] mx-auto  ">
+      <nav className=" flex items-center justify-between w-[80%] h-20 mx-auto  ">
         <Link to="/" className="flex items-center gap-3 group">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center rounded-lg group-hover:scale-105 transition-transform duration-300 ">
@@ -29,6 +29,7 @@ const NavBar = () => {
         </div>
       </nav>
     </header>
+    
   );
 };
 
