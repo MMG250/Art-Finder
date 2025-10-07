@@ -165,7 +165,7 @@ const About = () => {
                 className="bg-blue-50 p-5 rounded-xl shadow-sm border border-gray-100 flex gap-3">
                    <div className="p-2 bg-purple-50 rounded-lg">{item.icon}</div>
                 <div>
-                  <h4 className="font-bold text-gratext-lg">{item.title}</h4>
+                  <h4 className="font-bold text-gray-500 text-lg">{item.title}</h4>
                   <p className="text-gray-600 text-sm">{item.text}</p>
                 </div>
               </div>
