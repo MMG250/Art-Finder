@@ -14,7 +14,7 @@ import { CiHeart } from "react-icons/ci";
 
 const About = () => {
   return (
-    <div className="bg-gradient-to-br from-purple-900 via-purple-800 to-indigo-900 text-white">
+    <div className="bg-gradient-to-br from-blue-600 via-orange-300 to-blue-600 text-white">
       <section className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-blue-600 via-orange-300 to-blue-600 text-white px-6 text-center">
         <div className="mb-6 px-5 py-2 bg-gradient-to-r from-blue-600 to-orange-300 text-sm rounded-full text-white hover:bg-white/20 transition">
           Our Story
@@ -124,7 +124,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className=" bg-orange-100 max-w-7xl mx-auto py-20 px-6 grid md:grid-cols-2 gap-10 items-center">
+      <section className=" max-w-7xl mx-auto py-20 px-6 grid md:grid-cols-2 gap-10 items-center">
         <div className="relative">
           <img src="" alt="Mission Art" className="rounded-3xl shadow-2xl w-full" />
           <div className="absolute -top-6 -left-6 w-16 h-16 bg-pink-400 rounded-full blur-2xl opacity-70"></div>
