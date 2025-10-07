@@ -4,35 +4,33 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-[#1e1b2e] to-[#2d1b3e] text-gray-300 py-12">
+    <footer className="bg-gradient-to-r from-orange-300 via-blue-600 to-orange-300 text-gray-900 py-12">
       <div className="wid-container  grid grid-cols-1 md:grid-cols-4 gap-10">
         
-        {/* Art Gallery */}
         <div>
-          <h2 className="text-lg font-semibold text-purple-300 mb-4">Art Gallery</h2>
+          <h2 className="text-lg font-semibold text-pink-900 mb-4">Art Gallery</h2>
           <p className="text-sm mb-4">
             Discover unique artworks from talented artists around the world. 
             Our platform connects art lovers with creators in a seamless digital experience.
           </p>
           <div className="flex space-x-3 mt-3">
-            <Link t="#" className="p-2 bg-gray-700 rounded-full hover:bg-purple-500 transition">
+            <Link t="#" className="p-2 bg-orange-300 rounded-full hover:bg-blue-500 transition">
               <FaInstagram />
             </Link>
-            <Link to="#" className="p-2 bg-gray-700 rounded-full hover:bg-purple-500 transition">
+            <Link to="#" className="p-2 bg-orange-300 rounded-full hover:bg-blue-500 transition">
               <FaFacebookF />
             </Link>
-            <Link to="#" className="p-2 bg-gray-700 rounded-full hover:bg-purple-500 transition">
+            <Link to="#" className="p-2 bg-orange-300 rounded-full hover:bg-blue-500 transition">
               <FaTwitter />
             </Link>
-            <Link to="#" className="p-2 bg-gray-700 rounded-full hover:bg-purple-500 transition">
+            <Link to="#" className="p-2 bg-orange-300 rounded-full hover:bg-blue-500 transition">
               <FaEnvelope />
             </Link>
           </div>
         </div>
 
-        {/* Categories */}
         <div>
-          <h2 className="text-lg font-semibold text-white mb-4">Categories</h2>
+          <h2 className="text-lg font-semibold text-pink-800 mb-4">Categories</h2>
           <ul className="space-y-2 text-sm">
             <li> Photography</li>
             <li> Painting</li>
@@ -44,7 +42,7 @@ const Footer = () => {
 
         {/* Help & Information */}
         <div>
-          <h2 className="text-lg font-semibold text-white mb-4">Help & Information</h2>
+          <h2 className="text-lg font-semibold text-pink-800 mb-4">Help & Information</h2>
           <ul className="space-y-3 text-sm">
             <li> Shipping Info</li>
             <li> Returns & Exchanges</li>
@@ -56,7 +54,7 @@ const Footer = () => {
 
         {/* Newsletter */}
         <div>
-          <h2 className="text-lg font-semibold text-white mb-4">Newsletter</h2>
+          <h2 className="text-lg font-semibold text-pink-800 mb-4">Newsletter</h2>
           <p className="text-sm mb-3">
             Subscribe to our newsletter for the latest artworks, artists, and exclusive offers.
           </p>
@@ -66,7 +64,7 @@ const Footer = () => {
               placeholder="your@email.com"
               className="w-full px-4 py-2 rounded-md bg-gray-800 text-gray-200 placeholder-gray-400 outline-none focus:ring-2 focus:ring-purple-400"
             />
-            <button className="w-full py-2 rounded-md bg-gradient-to-r from-purple-500 to-pink-500 text-white font-medium hover:opacity-90 transition">
+            <button className="w-full py-2 rounded-md bg-gradient-to-r from-blue-600 to-orange-500 text-pink-800 font-medium hover:opacity-90 transition">
               Subscribe →
             </button>
           </div>
@@ -74,9 +72,9 @@ const Footer = () => {
       </div>
 
       {/* Bottom */}
-      <div className="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-400">
+      <div className="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-00">
         Copyright © 2025 All rights reserved | Made by{" "}
-        <span className="text-purple-300 font-semibold">Mucyo Gretha</span> 
+        <span className="text-pink-800 font-semibold">Mucyo Gretha</span> 
         {/* & distributed by{" "} */}
         {/* <span className="text-purple-300 font-semibold">University of Lay Adventists of Kigali</span> */}
       </div>
