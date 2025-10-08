@@ -4,6 +4,7 @@ import HomeLayout from './layouts/HomeLayout'
 import Home from './pages/home'
 import NotFound from './components/NotFound'
 import About from './pages/about'
+import Artist from './pages/artist'
 
 const AppRoutes = () => {
   return (
@@ -16,6 +17,7 @@ const AppRoutes = () => {
                 <Route  index element={<Home />}/>
                 <Route  path='*' element={<NotFound />}/>
                 <Route  path='about' element={<About />} />
+                <Route  path='artist' element={<Artist />} />
 
 
 

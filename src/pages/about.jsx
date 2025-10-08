@@ -11,6 +11,8 @@ import { CheckCircle, Globe } from "lucide-react";
 import { FaHeart } from "react-icons/fa6";
 import { GiBrain } from "react-icons/gi";
 import { CiHeart } from "react-icons/ci";
+import funiture1 from '../assets/funiture1.jpg';
+import funiture2 from '../assets/funiture2.jpg';
 
 const About = () => {
   return (
@@ -86,7 +88,7 @@ const About = () => {
       </section>
 
       <section className="bg-white text-gray-900 py-20 px-6">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
           <div>
             <button className="mb-6 px-4 py-2 bg-orange-100 text-gray-700 text-sm rounded-full flex items-center space-x-2">
               <span className="text-lg"><BsStars /></span>
@@ -116,18 +118,18 @@ const About = () => {
             </div>
           </div>
 
-          <div className="relative">
-            <img src="./././funiture1.jpg" alt="Our Story" className="rounded-xl shadow-lg"/>
-            <div className="absolute top-0 right-0 w-20 h-20 bg-orange-400 rounded-full blur-3xl opacity-70"></div>
+          <div className="relative w-full flex justify-center">
+            <img src={funiture1} alt="Our Story" className="w-90% md:w-70% h-auto object-cover rounded-2xl shadow-xl"/>
+            <div className="absolute top-9 right-0 w-20 h-20 bg-orange-400 rounded-full blur-3xl opacity-70"></div>
             <div className="absolute bottom-0 left-0 w-24 h-24 bg-blue-400 rounded-full blur-3xl opacity-70"></div>
           </div>
         </div>
       </section>
 
-      <section className=" max-w-7xl mx-auto py-20 px-6 grid md:grid-cols-2 gap-10 items-center">
-        <div className="relative">
-          <img src="" alt="Mission Art" className="rounded-3xl shadow-2xl w-full" />
-          <div className="absolute -top-6 -left-6 w-16 h-16 bg-pink-400 rounded-full blur-2xl opacity-70"></div>
+      <section className=" max-w-7xl mx-auto py-8 px-8 grid md:grid-cols-2 gap-20 items-center">
+        <div className="relative w-full flex justify-center">
+          <img src={funiture2} alt="Mission Art" className="w-[100%] md:w-[100%] h-auto object-cover rounded-2xl shadow-xl"/>
+          <div className="absolute -top-9 -left-6 w-20 h-20 rounded-full blur-2xl opacity-70"></div>
           <div className="absolute -bottom-6 -right-6 w-16 h-16 bg-blue-400 rounded-full blur-2xl opacity-70"></div>
         </div>
 
