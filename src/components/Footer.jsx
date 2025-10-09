@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-orange-300 via-blue-600 to-orange-300 text-gray-900 py-12">
+    <footer className="bg-gradient-to-r from-white via-blue-300 to-white text-black py-12">
       <div className="wid-container  grid grid-cols-1 md:grid-cols-4 gap-10">
         
         <div>
-          <h2 className="text-lg font-semibold text-pink-900 mb-4">Art Gallery</h2>
+          <h2 className="text-lg font-bold text-pink-900 mb-4">Art Gallery</h2>
           <p className="text-sm mb-4">
             Discover unique artworks from talented artists around the world. 
             Our platform connects art lovers with creators in a seamless digital experience.
@@ -30,7 +30,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <h2 className="text-lg font-semibold text-pink-800 mb-4">Categories</h2>
+          <h2 className="text-lg font-bold text-pink-800 mb-4">Categories</h2>
           <ul className="space-y-2 text-sm">
             <li> Photography</li>
             <li> Painting</li>
@@ -42,7 +42,7 @@ const Footer = () => {
 
         {/* Help & Information */}
         <div>
-          <h2 className="text-lg font-semibold text-pink-800 mb-4">Help & Information</h2>
+          <h2 className="text-lg font-bold text-pink-800 mb-4">Help & Information</h2>
           <ul className="space-y-3 text-sm">
             <li> Shipping Info</li>
             <li> Returns & Exchanges</li>
@@ -54,7 +54,7 @@ const Footer = () => {
 
         {/* Newsletter */}
         <div>
-          <h2 className="text-lg font-semibold text-pink-800 mb-4">Newsletter</h2>
+          <h2 className="text-lg font-bold text-pink-800 mb-4">Newsletter</h2>
           <p className="text-sm mb-3">
             Subscribe to our newsletter for the latest artworks, artists, and exclusive offers.
           </p>

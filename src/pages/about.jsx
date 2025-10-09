@@ -16,13 +16,13 @@ import funiture2 from '../assets/funiture2.jpg';
 
 const About = () => {
   return (
-    <div className="bg-gradient-to-br from-blue-600 via-orange-300 to-blue-600 text-white">
-      <section className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-blue-600 via-orange-300 to-blue-600 text-white px-6 text-center">
-        <div className="mb-6 px-5 py-2 bg-gradient-to-r from-blue-600 to-orange-300 text-sm rounded-full text-white hover:bg-white/20 transition">
+    <div className="bg-gradient-to-br from-white via-blue-300 to-white text-black">
+      <section className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-blue-300 via-white to-blue-300 text-white px-6 text-center">
+        <div className="mb-6 px-5 py-2 bg-gradient-to-r from-blue-300 to-white text-sm rounded-full text-black hover:bg-white/20 transition">
           Our Story
         </div>
 
-        <h1 className="text-5xl sm:text-7xl font-bold mb-9">
+        <h1 className="text-5xl sm:text-7xl text-black font-bold mb-9">
           {" "}
           About
           <span className="text-blue-600">ArtFinder</span>
@@ -34,16 +34,16 @@ const About = () => {
         </p>
 
         <div className="flex space-x-4">
-          <button className="px-6 py-3 rounded-lg bg-gradient-to-r from-blue-600 to-orange-300 text-white font-medium shadow-md hover:from-blue-800 transition">
+          <button className="px-6 py-3 rounded-lg bg-gradient-to-r from-blue-200 to-white text-black font-medium shadow-md hover:from-blue-800 transition">
             Explore Our Artists→
           </button>
-          <button className="px-6 py-3 rounded-lg border text-gray-200 hover:bg-blue-800 transition">
+          <button className="px-6 py-3 rounded-lg border text-black hover:bg-blue-800 transition">
             Contact Us
           </button>
         </div>
       </section>
 
-      <section className="bg-orange-100 text-black py-20 px-6">
+      <section className="bg-white text-black py-20 px-6">
         <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-center">
           <div>
             <div className="flex justify-center mb-4">
@@ -90,7 +90,7 @@ const About = () => {
       <section className="bg-white text-gray-900 py-20 px-6">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
           <div>
-            <button className="mb-6 px-4 py-2 bg-orange-100 text-gray-700 text-sm rounded-full flex items-center space-x-2">
+            <button className="mb-6 px-4 py-2 bg-blue-200 text-black text-sm rounded-full flex items-center space-x-2">
               <span className="text-lg"><BsStars /></span>
               <span>Our Journey</span>
             </button>
@@ -101,19 +101,19 @@ const About = () => {
             <p className="text-lg mb-6">
               This observation sparked the idea of Online Art Finder and exhibition, an online marketplace dedicated to connecting these artists with people who appreciate the uniqueness and beauty of handmade art.
             </p>
-            <div className="bg-orange-50 p-6 rounded-l-4 border-orange-400 mb-6">
-              <FaQuoteRight className="text-orange-500 text-2xl mb-2" />
+            <div className="bg-blue-50 p-6 rounded-l-4 border-orange-400 mb-6">
+              <FaQuoteRight className="text-blue-300 text-2xl mb-2" />
               <p className="italic text-gray-700">"As we continue to grow, our commitment to these principles remains steadfast. We are dedicated to supporting our artists, inspiring creativity, and bringing beautiful, meaningful art into homes around the world."</p>
               <p className="mt-3 text-gray-600">Thank you for being a part of our story. Together, we can make a difference in the art world and beyond.</p>
             </div>
 
-            <div className="flex items-center gap-4 bg-orange-50 p-4 rounded-lg">
-              <span className="p-3 bg-gradient-to-r from-blue-500 to-orange-500 text-white rounded-full">
+            <div className="flex items-center gap-4 bg-blue-50 p-4 rounded-lg">
+              <span className="p-3 bg-gradient-to-r from-blue-500 to-white text-black rounded-full">
                 <FaPhoneAlt />
               </span>
               <div>
-                <p className="text-sm text-gray-500">Questions? Call us at</p>
-                <p className="font-bold text-orange-700">(+250) 784 404 173</p>
+                <p className="text-sm text-black">Questions? Call us at</p>
+                <p className="font-bold text-blue-700">(+250) 784 404 173</p>
               </div>
             </div>
           </div>
@@ -134,7 +134,7 @@ const About = () => {
         </div>
 
         <div>
-          <span className="bg-white text-gray-800 text-sm px-3 py-1 rounded-full font-medium">Our Purpose</span>
+          <span className="bg-white text-black text-sm px-3 py-1 rounded-full font-medium">Our Purpose</span>
           <h2 className="text-4xl font-extrabold  text-black mt-4 mb-3">Our Mission</h2>
           <p className="text-gray-600 mb-6 leading-relaxed">We're on a mission to revolutionize how art is discovered, shared, and collected worldwide.</p>
 
@@ -179,7 +179,7 @@ const About = () => {
 
       <section className="py-20 px-6 text-center bg-white">
         <div className="max-w-4xl mx-auto">
-          <span className="inline-flex items-center px-3 py-1 text-sm font-semibold text-gray-500 bg-orange-100 rounded-full mb-4">
+          <span className="inline-flex items-center px-3 py-1 text-sm font-semibold text-gray-500 bg-blue-100 rounded-full mb-4">
             <CheckCircle className="w-4 h-4 mr-1"/> Our Values
           </span>
 
@@ -196,9 +196,9 @@ const About = () => {
             ].map((value, index)=> (
               <div
                 key={index}
-                className="flex flex-col items-center justify-center bg-gradient-to-r from-blue-100 to-orange-100 rounded-xl shadow-sm py-6 px-4 hover:shadow-lg transition">
+                className="flex flex-col items-center justify-center bg-gradient-to-r from-blue-100 to-white rounded-xl shadow-sm py-6 px-4 hover:shadow-lg transition">
 
-                <div className="bg-gradient-to-br from-blue-500 to-orange-500 text-white p-3 rounded-full mb-3">
+                <div className="bg-gradient-to-br from-blue-500 to-white text-black p-3 rounded-full mb-3">
                   <CheckCircle className="w-6 h-6" />
                 </div> 
                 <p className="font-medium text-gray-800 text-sm">{value}</p>
@@ -210,7 +210,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="w-full bg-gradient-to-r from-blue-600 via-orange-300 to-blue-500 text-gray-700 text-center py-20 px-6">
+      <section className="w-full bg-gradient-to-r from-white via-blue-200 to-white text-gray-700 text-center py-20 px-6">
         <h2 className="text-3xl sm:text-4xl font-bold mb-4">
           Ready to Join Our Community?
         </h2>
