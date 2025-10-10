@@ -8,6 +8,9 @@ import artist3 from "../assets/artist3.jpg";
 import artist4 from "../assets/artist4.jpg";
 import artist5 from "../assets/artist5.jpg";
 import artist6 from "../assets/artist6.jpg";
+import { IoShareSocialOutline } from "react-icons/io5";
+import { AiOutlineMessage } from "react-icons/ai";
+import { FaRegHeart } from "react-icons/fa";
 
 const Artist = () => {
   return (
@@ -31,7 +34,7 @@ const Artist = () => {
               className='border border-gray-300 bg-white rounded-full px-5 py-2 w-64'
             />
           </div>
-          <button className='rounded-full border text-black bg-blue-300 px-6 hover:bg-orange-300 transition'>
+          <button className='rounded-full border text-black bg-white px-6 hover:bg-blue-300 transition'>
             Filter
           </button>
         </div>
@@ -57,43 +60,66 @@ const Artist = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-        {artists.map((artist) => (
-          <div
-            key={artist.id}
-            className="bg-gradient-to-r from-white via-blue-200 to-white rounded-2xl shadow hover:shadow-xl transition p-4"
-          >
-            <img
-              src={artist.image}
-              alt={artist.name}
-              className="w- h-56 object-cover rounded-xl mb-4"
-            />
-            <div className="flex justify-between items-center mb-2">
-              <span className="text-sm text-blue-500 font-medium bg-blue-100 px-3 py-1 rounded-full">
-                {artist.tag}
-              </span>
-              <span className="text-yellow-600 flex items-center text-sm">
-                <CiStar className="w-4 h-4 mr-1" /> {artist.rating}
-              </span>
-            </div>
-            <h3 className="text-xl font-semibold text-gray-800">
-              {artist.name}
-            </h3>
-            <p className="text-gray-500 text-sm mb-3">{artist.role}</p>
-            <div className="flex justify-between text-gray-600 text-sm mb-3">
-              <p>{artist.followers} Followers</p>
-              <p>{artist.artworks} Artworks</p>
-            </div>
-            <div className="flex justify-center space-x-4">
-              <button className="bg-blue-100 text-blue-500 px-4 py-1 rounded-full text-sm hover:bg-purple-200 transition">
-                Follow
-              </button>
-              <button className="bg-gray-100 text-gray-700 px-4 py-1 rounded-full text-sm hover:bg-gray-200 transition">
-                View
-              </button>
-            </div>
-          </div>
-        ))}
+  {artists.map((artist) => (
+    <div
+      key={artist.id}
+      className="relative bg-gradient-to-r from-white via-blue-200 to-white rounded-2xl shadow hover:shadow-xl transition-all p-4 group overflow-hidden"
+    >
+      <div className="relative">
+        <img
+          src={artist.image}
+          alt={artist.name}
+          className="w- h-56 object-cover rounded-xl mb-4"
+        />
+
+        <div
+          className="
+            absolute top-3 right-3 flex flex-col space-y-2
+            opacity-0 group-hover:opacity-100 transition-opacity duration-300
+            lg:opacity-100
+          "
+        >
+          <button className="bg-white p-3 rounded-full shadow hover:bg-blue-300 hover:text-black transition">
+            <FaRegHeart />
+          </button>
+          <button className="bg-white p-3 rounded-full shadow hover:bg-blue-300 hover:text-black transition">
+            <AiOutlineMessage />
+          </button>
+          <button className="bg-white p-3 rounded-full shadow hover:bg-blue-300 hover:text-black transition">
+            <IoShareSocialOutline />
+          </button>
+        </div>
       </div>
+
+      <div className="flex justify-between items-center mb-2">
+        <span className="text-sm text-blue-500 font-medium bg-blue-100 px-3 py-1 rounded-full">
+          {artist.tag}
+        </span>
+        <span className="text-yellow-600 flex items-center text-sm">
+          <CiStar className="w-4 h-4 mr-1" /> {artist.rating}
+        </span>
+      </div>
+
+      <h3 className="text-xl font-semibold text-gray-800">{artist.name}</h3>
+      <p className="text-black text-sm mb-3">{artist.role}</p>
+
+      <div className="flex justify-between text-red-500 text-sm mb-3">
+        <p>{artist.followers} Followers</p>
+        <p>{artist.artworks} Artworks</p>
+      </div>
+
+      <div className="flex justify-center space-x-4">
+        <button className="bg-blue-100 text-blue-500 px-4 py-1 rounded-full text-sm hover:bg-blue-200 transition">
+          Follow
+        </button>
+        <button className="bg-gray-100 text-black px-4 py-1 rounded-full text-sm hover:bg-blue-300 transition">
+          View
+        </button>
+      </div>
+    </div>
+  ))}
+</div>
+
 
       <div className="flex justify-center mt-16">
         <button className="bg-blue-500 text-white px-8 py-3 mb-8 rounded-full font-medium hover:bg-orange-300 transition">

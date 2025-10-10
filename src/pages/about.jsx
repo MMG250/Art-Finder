@@ -7,8 +7,7 @@ import { FaAward } from "react-icons/fa6";
 import { BsStars } from "react-icons/bs";
 import { FaQuoteRight } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
-import { CheckCircle, Globe } from "lucide-react";
-import { FaHeart } from "react-icons/fa6";
+import { CheckCircle } from "lucide-react";
 import { GiBrain } from "react-icons/gi";
 import { CiHeart } from "react-icons/ci";
 import funiture1 from '../assets/funiture1.jpg';
@@ -16,7 +15,7 @@ import funiture2 from '../assets/funiture2.jpg';
 
 const About = () => {
   return (
-    <div className="bg-gradient-to-br from-white via-blue-300 to-white text-black">
+    <div className="bg-white text-black">
       <section className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-blue-300 via-white to-blue-300 text-white px-6 text-center">
         <div className="mb-6 px-5 py-2 bg-gradient-to-r from-blue-300 to-white text-sm rounded-full text-black hover:bg-white/20 transition">
           Our Story
@@ -37,17 +36,17 @@ const About = () => {
           <button className="px-6 py-3 rounded-lg bg-gradient-to-r from-blue-200 to-white text-black font-medium shadow-md hover:from-blue-800 transition">
             Explore Our Artists→
           </button>
-          <button className="px-6 py-3 rounded-lg border text-black hover:bg-blue-800 transition">
+          <button className="px-6 py-3 rounded-lg border text-black hover:bg-blue-600 transition">
             Contact Us
           </button>
         </div>
       </section>
 
-      <section className="bg-white text-black py-20 px-6">
+      <section className="bg-gradient-to-r from-gray-100 via-blue-200 to-gray-100 text-black py-20 px-6">
         <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-center">
           <div>
             <div className="flex justify-center mb-4">
-              <span className="p-6 bg-gradient-to-r from-pink-400 to-purple-500 rounded-xl text-white">
+              <span className="p-6 bg-gradient-to-r from-pink-100 to-pink-600 rounded-xl text-white">
                 <FaUserGroup size={32} />
               </span>
             </div>
@@ -57,7 +56,7 @@ const About = () => {
 
           <div>
             <div className="flex justify-center mb-4">
-              <span className="p-6 bg-gradient-to-r from-blue-400 to-blue-700 rounded-xl text-white">
+              <span className="p-6 bg-gradient-to-r from-blue-200 to-blue-700 rounded-xl text-white">
                 <FaChartLine size={32} />
               </span>
             </div>
@@ -67,7 +66,7 @@ const About = () => {
 
           <div>
             <div className="flex justify-center mb-4">
-              <span className="p-6 bg-gradient-to-r from-green-400 to-green-600 rounded-xl text-white">
+              <span className="p-6 bg-gradient-to-r from-green-200 to-green-600 rounded-xl text-white">
                 <FaGlobe size={32} />
               </span>
             </div>
@@ -77,7 +76,7 @@ const About = () => {
 
           <div>
             <div className="flex justify-center mb-4">
-              <span className="p-6 bg-gradient-to-r from-orange-400 to-red-500 rounded-xl text-white">
+              <span className="p-6 bg-gradient-to-r from-orange-200 to-orange-500 rounded-xl text-white">
                 <FaAward size={32} />
               </span>
             </div>

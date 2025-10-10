@@ -5,6 +5,7 @@ import Home from './pages/home'
 import NotFound from './components/NotFound'
 import About from './pages/about'
 import Artist from './pages/artist'
+import Contact from './pages/contact'
 
 const AppRoutes = () => {
   return (
@@ -18,6 +19,7 @@ const AppRoutes = () => {
                 <Route  path='*' element={<NotFound />}/>
                 <Route  path='about' element={<About />} />
                 <Route  path='artist' element={<Artist />} />
+                <Route  path='contact' element={<Contact />} />
 
 
 
