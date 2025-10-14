@@ -47,7 +47,7 @@ const Contact = () => {
           Contact <span className="text-blue-600">Us</span>
         </h2>
         <p className="text-xl mt-3 relative z-10">
-          Have questions or feedback? We’d love to hear from you. Reach out to our team anytime.
+          Have questions or feedback? We’d love to here from you, reach out to our team anytime.
         </p>
       </section>
 
@@ -121,7 +121,7 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label className="text-sm text-black">Email Address</label>
+                <label className="text-sm text-black">Email Adress</label>
                 <input
                   type="email"
                   name="email"
@@ -150,13 +150,13 @@ const Contact = () => {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                placeholder="Type your message here..."
+                placeholder="Type your message here...."
                 className="w-full p-2 mt-1 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400"
               ></textarea>
             </div>
             <button
               type="submit"
-              className="w-full py-2 mt-3 bg-gradient-to-r from-blue-500 to-white text-black rounded-lg font-semibold hover:bg-gray-500 transition"
+              className="w-full py-2 mt-3 bg-gradient-to-r from-blue-500 to-white text-black rounded-lg font-semibold hover:from-blue-800 transition"
             >
               Send Message ✈️
             </button>

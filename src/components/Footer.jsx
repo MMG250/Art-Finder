@@ -47,8 +47,8 @@ const Footer = () => {
             <li> Shipping Info</li>
             <li> Returns & Exchanges</li>
             <li> FAQs</li>
-            <li> (+250) 780 636 729</li>
-            <li> Kayonza-Mukarange, Nyagatovu</li>
+            <li> (+250) 790 566 829</li>
+            <li> Gasabo- Kibagabaga, Kimironko</li>
           </ul>
         </div>
 
@@ -64,7 +64,7 @@ const Footer = () => {
               placeholder="your@email.com"
               className="w-full px-4 py-2 rounded-md bg-gray-800 text-gray-200 placeholder-gray-400 outline-none focus:ring-2 focus:ring-purple-400"
             />
-            <button className="w-full py-2 rounded-md bg-gradient-to-r from-blue-600 to-orange-500 text-pink-800 font-medium hover:opacity-90 transition">
+            <button className="w-full py-2 rounded-md bg-gradient-to-r from-blue-600 to-orange-300 text-pink-800 font-medium hover:opacity-90 transition">
               Subscribe →
             </button>
           </div>

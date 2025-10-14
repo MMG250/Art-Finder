@@ -36,7 +36,7 @@ const About = () => {
           <button className="px-6 py-3 rounded-lg bg-gradient-to-r from-blue-200 to-white text-black font-medium shadow-md hover:from-blue-800 transition">
             Explore Our Artists→
           </button>
-          <button className="px-6 py-3 rounded-lg border text-black hover:bg-blue-600 transition">
+          <button className="px-6 py-3 rounded-lg bg-gradient-to-r from-blue-200 to-white text-black hover:from-blue-800 transition">
             Contact Us
           </button>
         </div>
@@ -178,12 +178,12 @@ const About = () => {
 
       <section className="py-20 px-6 text-center bg-white">
         <div className="max-w-4xl mx-auto">
-          <span className="inline-flex items-center px-3 py-1 text-sm font-semibold text-gray-500 bg-blue-100 rounded-full mb-4">
+          <span className="inline-flex items-center px-3 py-1 text-sm font-bold text-black bg-blue-100 rounded-full mb-4">
             <CheckCircle className="w-4 h-4 mr-1"/> Our Values
           </span>
 
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-3">What We Stand For</h2>
-          <p className="text-gray-600 mb-10">These core values guide everything we do and shape our commitment to the art community.</p>
+          <p className="text-black mb-10">These core values guide everything we do and shape our commitment to the art community.</p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-center">
             {[
@@ -195,7 +195,7 @@ const About = () => {
             ].map((value, index)=> (
               <div
                 key={index}
-                className="flex flex-col items-center justify-center bg-gradient-to-r from-blue-100 to-white rounded-xl shadow-sm py-6 px-4 hover:shadow-lg transition">
+                className="flex flex-col items-center justify-center bg-gradient-to-r from-blue-50 to-blue-100 rounded-xl shadow:sm py-6 px-4 hover:shadow-2xl transition">
 
                 <div className="bg-gradient-to-br from-blue-500 to-white text-black p-3 rounded-full mb-3">
                   <CheckCircle className="w-6 h-6" />
@@ -220,10 +220,10 @@ const About = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4 mb-6">
-          <button className="bg-white text-gray-700 font-semibold px-6 py-3 rounded-lg hover:bg-blue-100 transition">
+          <button className="bg-white text-black font-semibold px-6 py-3 rounded-lg hover:bg-blue-100 transition">
             Browse Artworks
           </button>
-          <button className="bg-transparent border border-white font-semibold px-6 py-3 rounded-lg hover:bg-white hover:text-blue-700 transition">
+          <button className="bg-transparent border border-white font-semibold text-black px-6 py-3 rounded-lg hover:bg-white hover:text-blue-700 transition">
             Become an Artist
           </button>
         </div>
